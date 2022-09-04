@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html {
+  background-color: #2D2D2D;
+  font-family: 'Inter';
+}
+
+nav {
+  font-weight: 500;
+}
+
+nav :hover {
+  font-weight: 600;
+}
+
+nav :active {
+  font-weight: 600;
+  color: #D07A3B;
+}
+
+h1 {
+  font-weight: 700;
+}

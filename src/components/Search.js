@@ -9,7 +9,7 @@ const Search = () => {
                         id="description"
                         name="description"
                         rows={3}
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-x-amber-600 focus:ring-amber-600 "
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-x-amber-600 focus:ring-amber-600"
                         placeholder="Lush green grass, blue sky, and a beautiful lake."
                         defaultValue={''}
                       />

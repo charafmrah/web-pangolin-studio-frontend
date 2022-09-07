@@ -8,12 +8,13 @@ html {
   font-family: 'Inter';
 }
 
+
 nav {
   font-weight: 500;
 }
 
 nav :hover {
-  font-weight: 600;
+  transform: scale(1.05);
 }
 
 nav :active {

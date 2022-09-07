@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -6,8 +7,8 @@ const Footer = () => {
             <div className='md:flex md:justify-end'>
                 <nav className='flex flex-col-reverse text-center md:flex-row justify-center md:gap-5 align-middle'>
                     <a href='https://webpangolin.com'>Built with passion By Web Pangolin</a>
-                    <a href=''>Privacy Policy</a>
-                    <a href=''>Terms Of Service</a>
+                    <NavLink to='/privacy'>Privacy Policy</NavLink>
+                    <NavLink to='terms'>Terms Of Service</NavLink>
                 </nav>
             </div>
         </footer>

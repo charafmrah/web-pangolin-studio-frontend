@@ -11,6 +11,8 @@ import {
 import About from './routes/about';
 import Generator from './routes/generator';
 import Account from './routes/account';
+import Privacy from './routes/privacy';
+import Terms from './routes/terms';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +23,8 @@ root.render(
           <Route path='generator' element={<Generator />} />
           <Route path='about' element={<About />} />
           <Route path='account' element={<Account />} />
+          <Route path='privacy' element={<Privacy />} />
+          <Route path='terms' element={<Terms />} />
           <Route
             path='*'
             element={

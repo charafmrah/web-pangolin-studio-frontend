@@ -1,9 +1,10 @@
 import React from "react"
+import Title from "../components/Title"
 
 const Terms = () => {
     return (
         <div>
-        <h1>Terms</h1>
+            <Title title="Terms of Service"/>
         </div>
     )
 }

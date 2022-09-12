@@ -1,9 +1,10 @@
 import React from 'react'
+import Title from '../components/Title'
 
 const Privacy = () => {
     return (
         <div>
-            <h1>Privacy</h1>
+            <Title title='Privacy Policy'/>
         </div>
     )
 }

@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Title from '../components/Title'
 
 const About = () => {
     return (
         <div>
-            <h1>About</h1>
+            <Title title='About'/>
         </div>
     )
 }

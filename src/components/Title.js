@@ -1,11 +1,10 @@
 import React from "react"
 
-// TODO: Add a title prop to the Title component
-const Title = () => {
+const Title = (props) => {
     return (
-        <div>
-            <h1>Privacy</h1>
-        </div>
+            <h1 className='flex justify-center text-center text-3xl md:text-6xl text-white mt-16 md:mt-24 mb-18 '>
+                {props.title}
+            </h1>
     )
 }
 

@@ -27,26 +27,15 @@
   }
 
   html {
-    background-color: #2a3443;
-    font-family: 'Inter';
+    @apply bg-secondary font-sans;
   }
 
-
-  nav {
-    font-weight: 500;
-  }
-
-  nav :hover {
-    transform: scale(1.05);
-  }
-
-  nav :active {
-    font-weight: 600;
-    color: #D07A3B;
+  a {
+    @apply font-medium hover:scale-105 active:font-bold;
   }
 
   h1 {
-    font-weight: 700;
+    @apply font-bold text-3xl;
   }
 }
 

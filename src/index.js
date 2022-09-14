@@ -8,11 +8,11 @@ import {
   Routes,
   Route,
  } from 'react-router-dom';
-import About from './routes/about';
-import Generator from './routes/generator';
-import Account from './routes/account';
-import Privacy from './routes/privacy';
-import Terms from './routes/terms';
+import About from './routes/About';
+import Generator from './routes/Generator';
+import Account from './routes/Account';
+import Privacy from './routes/Privacy';
+import Terms from './routes/Terms';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

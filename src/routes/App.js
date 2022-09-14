@@ -1,9 +1,6 @@
-import logo from './logo.svg'
-import './App.css'
-import Header from './components/Header.js'
-import Footer from './components/Footer.js'
+import Header from '../components/Header.js'
+import Footer from '../components/Footer.js'
 import { Outlet, Link } from 'react-router-dom'
-import Title from './components/Title'
 import firebase from 'firebase/compat/app';
 
 function App() {

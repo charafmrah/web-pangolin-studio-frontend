@@ -9,7 +9,7 @@ const Search = () => {
                         id="description"
                         name="description"
                         rows={3}
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-x-amber-600 focus:ring-amber-600"
+                        className="mt-1 block p-2 w-full rounded-md border-gray-300 shadow-sm focus:border-x-primary focus:ring-primary"
                         placeholder="Lush green grass, blue sky, and a beautiful lake."
                         defaultValue={''}
                       />
@@ -21,7 +21,7 @@ const Search = () => {
                         </p>
                         <button
                             type="submit"
-                            className="inline-flex justify-center rounded-md border border-transparent bg-amber-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
+                            className="inline-flex justify-center rounded-md border border-transparent bg-primary py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                         >
                             Generate
                         </button>

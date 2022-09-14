@@ -13,37 +13,6 @@ import Generator from './routes/generator';
 import Account from './routes/account';
 import Privacy from './routes/privacy';
 import Terms from './routes/terms';
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
-
-// Firebase Configurations:
-const firebaseConfig = {
-
-  apiKey: "AIzaSyC0M_TqtaNGJfolW8GQ0OpyrgPRYLwFfVM",
-
-  authDomain: "creators-ai-tools.firebaseapp.com",
-
-  projectId: "creators-ai-tools",
-
-  storageBucket: "creators-ai-tools.appspot.com",
-
-  messagingSenderId: "779221024888",
-
-  appId: "1:779221024888:web:fd0e28b7d831afd1036d8d",
-
-  measurementId: "G-JW12XC7N60"
-
-};
-
-// Use this to initialize the firebase App
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-
-// Use these for db & auth
-const db = firebaseApp.firestore();
-const auth = firebase.auth();
-
-export { auth, db };
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

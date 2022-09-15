@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 @layer components {
+  
+  .sidebar{
+    @apply flex flex-row justify-center md:flex-col 
+    gap-5 md:gap-2
+    fixed 
+    p-4 bottom-0 md:bottom-auto 
+    left-1/2 translate-x-[-50%] md:left-0 md:translate-x-0
+  }
+
   .sidebar-icon {
     @apply relative flex items-center justify-center 
     h-12 w-12 mt-2 mb-2 mx-auto  
@@ -29,7 +38,8 @@
   .top-navigation {
     @apply flex flex-row sticky top-0 items-center justify-evenly 
     bg-gray-300 dark:bg-gray-700 bg-opacity-90 
-    w-full h-16 
+    w-full h-auto overflow-hidden
+    px-4 py-4
     m-0 
     shadow-lg;
   }
@@ -69,7 +79,7 @@
   }
 
   html {
-    @apply bg-secondary font-sans;
+    @apply bg-secondary font-[Inter];
   }
 
   a {

@@ -13,8 +13,8 @@ const TopBar = () => {
   )
 }
 
-const SupportIcon = () => <FaInfoCircle size='24' className='top-navigation-icon' />
-const UserCircle = () => <FaUserCircle size='24' className='top-navigation-icon' />
-const Title = () => <h5 className='title-text'>Creator AI Tools</h5>
+const SupportIcon = () => <FaInfoCircle size='34' className='top-navigation-icon' />
+const UserCircle = () => <FaUserCircle size='34' className='top-navigation-icon' />
+const Title = () => <h5 className='title-text text-2xl'>Creator AI Tools</h5>
 
 export default TopBar

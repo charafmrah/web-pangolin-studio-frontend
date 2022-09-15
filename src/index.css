@@ -57,7 +57,7 @@
   }
 
   .title-text {
-    @apply text-xl text-white tracking-wider font-semibold text-opacity-80 
+    @apply text-xl md:text-2xl text-white tracking-wider font-semibold text-opacity-80 
     mr-auto ml-2 my-auto 
     transition duration-300 ease-in-out;
   }

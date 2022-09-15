@@ -1,12 +1,12 @@
-import { BsPlus, BsFillLightningFill, BsGearFill } from 'react-icons/bs'
-import { FaFire } from 'react-icons/fa'
+import { BsGearFill } from 'react-icons/bs'
+import { FaFire, FaImage } from 'react-icons/fa'
+import { ImTextWidth } from 'react-icons/im'
 
 const SideBar = () => {
   return (
         <div className="sidebar">
-          <SideBarIcon text='Dashboard' icon={<FaFire size="28" />} />
-          <SideBarIcon text='Generate a thumbnail' icon={<BsPlus size="32" />} />
-          <SideBarIcon text='Credits' icon={<BsFillLightningFill size="20" />} />
+          <SideBarIcon text='Generate a thumbnail' icon={<FaImage size="24" />} />
+          <SideBarIcon text='Title Generator' icon={<ImTextWidth size="20" />} />
           <SideBarIcon text='Settings' icon={<BsGearFill size="22" />} />
         </div>            
   )

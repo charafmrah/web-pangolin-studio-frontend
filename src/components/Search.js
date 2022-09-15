@@ -21,7 +21,7 @@ const Search = () => {
                         </p>
                         <button
                             type="submit"
-                            className="inline-flex justify-center rounded-md border border-transparent bg-primary py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                            className="inline-flex justify-center rounded-md border border-transparent bg-primary hover:bg-white py-2 px-4 text-sm font-medium text-white hover:text-primary shadow-sm hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
                         >
                             Generate
                         </button>

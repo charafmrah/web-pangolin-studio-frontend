@@ -6,7 +6,7 @@
   .sidebar-icon {
     @apply relative flex items-center justify-center 
     h-12 w-12 mt-2 mb-2 mx-auto  
-  bg-secondary hover:bg-primary dark:bg-secondary
+  bg-gray-600 hover:bg-primary 
   text-primary hover:text-white
     hover:rounded-xl rounded-3xl
     transition-all duration-300 ease-linear
@@ -15,7 +15,7 @@
 
   .sidebar-tooltip {
     @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md
-    text-white bg-secondary-dark 
+    text-white bg-gray-600 
     text-xs font-bold 
     transition-all duration-100 scale-0 origin-left;
   }
@@ -24,6 +24,48 @@
     @apply bg-gray-200 dark:bg-gray-800 
     border border-gray-200 dark:border-gray-800 rounded-full
     mx-2;
+  }
+
+  .top-navigation {
+    @apply flex flex-row sticky top-0 items-center justify-evenly 
+    bg-gray-300 dark:bg-gray-700 bg-opacity-90 
+    w-full h-16 
+    m-0 
+    shadow-lg;
+  }
+
+  .top-navigation-icon {
+    @apply text-gray-500
+    mr-3 ml-4
+    transition duration-300 ease-in-out 
+    hover:text-primary 
+    cursor-pointer;
+  }
+
+  .top-navigation-icon:first {
+    @apply ml-auto mr-4;
+  }
+
+  .title-text {
+    @apply text-xl text-white tracking-wider font-semibold text-opacity-80 
+    mr-auto ml-2 my-auto 
+    transition duration-300 ease-in-out;
+  }
+
+  .search {
+    @apply w-1/5 flex items-center justify-start 
+    bg-gray-400 dark:bg-gray-600
+    text-gray-500
+    px-2 h-9 ml-0 mr-0 
+    rounded-md shadow-md
+    transition duration-300 ease-in-out;
+  }
+
+  .search-input {
+    @apply w-full font-sans font-semibold
+    bg-transparent outline-none 
+    text-gray-500  placeholder-gray-500
+    pl-1 rounded;
   }
 
   html {

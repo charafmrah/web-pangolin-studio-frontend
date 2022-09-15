@@ -1,10 +1,10 @@
 import React from "react"
-import Title from "../components/Title"
+import PageTitle from "../components/PageTitle"
 
 const Terms = () => {
     return (
         <div>
-            <Title title="Terms of Service"/>
+            <PageTitle title="Terms of Service"/>
         </div>
     )
 }

@@ -1,10 +1,10 @@
 import React from 'react'
-import Title from '../components/Title'
+import PageTitle from '../components/PageTitle'
 
 const Privacy = () => {
     return (
         <div>
-            <Title title='Privacy Policy'/>
+            <PageTitle title='Privacy Policy'/>
         </div>
     )
 }

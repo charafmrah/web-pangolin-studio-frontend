@@ -1,10 +1,10 @@
 import React from 'react'
-import Title from '../components/Title'
+import PageTitle from '../components/PageTitle'
 
 const Account = () => {
     return (
         <div>
-            <Title title='Account'/>
+            <PageTitle title='Account'/>
         </div>
     )
 }

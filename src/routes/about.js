@@ -1,12 +1,10 @@
 import React from 'react'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Title from '../components/Title'
+import PageTitle from '../components/PageTitle'
 
 const About = () => {
     return (
         <div>
-            <Title title='About'/>
+            <PageTitle title='About'/>
         </div>
     )
 }

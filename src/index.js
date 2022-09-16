@@ -10,8 +10,6 @@ import {
  } from 'react-router-dom';
 import ThumbnailGenerator from './routes/ThumbnailGenerator';
 import Account from './routes/Account';
-import Privacy from './routes/Privacy';
-import Terms from './routes/Terms';
 import TitleGenerator from './routes/TitleGenerator';
 import Settings from './routes/Settings';
 
@@ -26,8 +24,6 @@ root.render(
           <Route path='title-generator' element={<TitleGenerator />} />
           <Route path='settings' element={<Settings />} />
           <Route path='account' element={<Account />} />
-          <Route path='privacy' element={<Privacy />} />
-          <Route path='terms' element={<Terms />} />
           <Route
             path='*'
             element={

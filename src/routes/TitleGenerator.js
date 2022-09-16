@@ -1,6 +1,5 @@
 import React from 'react'
 import Search from '../components/ThumbnailSearch'
-import GeneratedImage from '../components/GeneratedImage'
 import PageTitle from '../components/PageTitle'
 import GeneratedTitles from '../components/GeneratedTitles'
 

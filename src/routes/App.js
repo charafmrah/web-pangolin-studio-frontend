@@ -1,6 +1,5 @@
 import TopBar from '../components/TopBar.js'
-import Footer from '../components/Footer.js'
-import { Outlet, Link } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import firebase from 'firebase/compat/app';
 import SideBar from '../components/Sidebar.js';
 

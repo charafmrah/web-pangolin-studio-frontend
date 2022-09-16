@@ -1,15 +1,15 @@
 import React from 'react'
-import Search from '../components/Search'
+import ThumbnailSearch from '../components/ThumbnailSearch'
 import GeneratedImage from '../components/GeneratedImage'
 import PageTitle from '../components/PageTitle'
 
-const Generator = () => {
+const ThumbnailGenerator = () => {
     return (
         <div>
 
             <PageTitle title='YouTube Thumbnail Generator'/>
 
-            <Search />
+            <ThumbnailSearch />
 
             <GeneratedImage />
 
@@ -17,4 +17,4 @@ const Generator = () => {
     )
 }
 
-export default Generator
+export default ThumbnailGenerator

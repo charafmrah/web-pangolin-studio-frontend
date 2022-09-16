@@ -2,13 +2,18 @@ import {
   FaUserCircle,
   FaInfoCircle
 } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const TopBar = () => {
   return (
     <div className='top-navigation'>
       <Title />
+      <a href='https://webpangolin.com/help' target='_blank' rel="noopener noreferrer">
       <SupportIcon />
-      <UserCircle />
+      </a> 
+      <Link to={'/account'}>
+        <UserCircle />
+      </Link>
     </div>
   )
 }

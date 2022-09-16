@@ -1,13 +1,20 @@
 import { BsGearFill } from 'react-icons/bs'
-import { FaFire, FaImage } from 'react-icons/fa'
+import { FaImage } from 'react-icons/fa'
 import { ImTextWidth } from 'react-icons/im'
+import { Link } from 'react-router-dom'
 
 const SideBar = () => {
   return (
         <div className="sidebar">
-          <SideBarIcon text='Generate a thumbnail' icon={<FaImage size="24" />} />
-          <SideBarIcon text='Title Generator' icon={<ImTextWidth size="20" />} />
-          <SideBarIcon text='Settings' icon={<BsGearFill size="22" />} />
+          <Link to={'/generator'}>
+            <SideBarIcon text='Generate a thumbnail' icon={<FaImage size="24" />} />
+          </Link>
+          <Link to={'/title-generator'}>
+            <SideBarIcon text='Title Generator' icon={<ImTextWidth size="20" />} />
+          </Link>
+          <Link to={'/settings'}>
+            <SideBarIcon text='Settings' icon={<BsGearFill size="22" />} />
+          </Link>
         </div>            
   )
 }
@@ -20,8 +27,5 @@ const SideBarIcon = ({ icon, text = 'tooltip 💡' }) => (
     </span>
   </div>
 )
-
-
-const Divider = () => <hr className="sidebar-hr" />
 
 export default SideBar

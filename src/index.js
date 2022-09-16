@@ -8,11 +8,12 @@ import {
   Routes,
   Route,
  } from 'react-router-dom';
-import About from './routes/About';
-import Generator from './routes/Generator';
+import ThumbnailGenerator from './routes/ThumbnailGenerator';
 import Account from './routes/Account';
 import Privacy from './routes/Privacy';
 import Terms from './routes/Terms';
+import TitleGenerator from './routes/TitleGenerator';
+import Settings from './routes/Settings';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,8 +22,9 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />}>
-          <Route path='generator' element={<Generator />} />
-          <Route path='about' element={<About />} />
+          <Route path='generator' element={<ThumbnailGenerator />} />
+          <Route path='title-generator' element={<TitleGenerator />} />
+          <Route path='settings' element={<Settings />} />
           <Route path='account' element={<Account />} />
           <Route path='privacy' element={<Privacy />} />
           <Route path='terms' element={<Terms />} />

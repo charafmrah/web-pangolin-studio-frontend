@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Search = () => {
+const ThumbnailSearch = () => {
     return (
         <>
             <div className='pt-14'>
@@ -33,4 +33,4 @@ const Search = () => {
     )
 }
 
-export default Search
+export default ThumbnailSearch

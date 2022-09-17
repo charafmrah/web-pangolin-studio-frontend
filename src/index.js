@@ -12,6 +12,7 @@ import ThumbnailGenerator from './routes/ThumbnailGenerator';
 import Account from './routes/Account';
 import TitleGenerator from './routes/TitleGenerator';
 import Settings from './routes/Settings';
+import SignUp from './routes/SignUp';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +25,7 @@ root.render(
           <Route path='title-generator' element={<TitleGenerator />} />
           <Route path='settings' element={<Settings />} />
           <Route path='account' element={<Account />} />
+          <Route path='signup' element={<SignUp />} />
           <Route
             path='*'
             element={

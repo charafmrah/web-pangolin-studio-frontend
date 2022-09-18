@@ -7,19 +7,27 @@ import { Link } from 'react-router-dom'
 const TopBar = () => {
   return (
     <div className='top-navigation'>
+
       <Title />
-      <a href='https://webpangolin.com/help' target='_blank' rel="noopener noreferrer">
+      
       <SupportIcon />
-      </a> 
-      <Link to={'/account'}>
-        <UserCircle />
-      </Link>
+      
+      <UserCircle />
+
     </div>
   )
 }
 
-const SupportIcon = () => <FaInfoCircle size='36' className='top-navigation-icon' />
-const UserCircle = () => <FaUserCircle size='36' className='top-navigation-icon' />
-const Title = () => <h5 className='title-text text-2xl'>Creator AI Tools</h5>
+const SupportIcon = () => <a href='https://webpangolin.com/help' target='_blank' rel="noopener noreferrer">
+  <FaInfoCircle size='36' className='top-navigation-icon' />
+</a>
+
+const UserCircle = () => <Link to={'/account'}>
+  <FaUserCircle size='36' className='top-navigation-icon' /> 
+</Link>
+
+const Title = () => <Link to={'/'} className='title-text text-2xl'>
+  Creator AI Tools
+</Link>
 
 export default TopBar

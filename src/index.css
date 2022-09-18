@@ -83,7 +83,7 @@
   }
 
   a {
-    @apply font-medium hover:scale-105 active:font-bold;
+    @apply font-medium hover:text-primary active:font-bold;
   }
 
   h1 {

@@ -13,6 +13,7 @@ import Account from './routes/Account';
 import TitleGenerator from './routes/TitleGenerator';
 import Settings from './routes/Settings';
 import SignUp from './routes/SignUp';
+import LogIn from './routes/LogIn';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,6 +27,7 @@ root.render(
           <Route path='settings' element={<Settings />} />
           <Route path='account' element={<Account />} />
           <Route path='signup' element={<SignUp />} />
+          <Route path='login' element={<LogIn />} />
           <Route
             path='*'
             element={

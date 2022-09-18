@@ -5,10 +5,10 @@ const TitleSearch = () => {
         <>
             <div className='pt-14'>
                     <div className="mt-1">
-                      <textarea
+                      <input
                         id="description"
                         name="description"
-                        rows={3}
+                        type={'text'}
                         className="mt-1 block p-2 w-full rounded-md border-gray-300 shadow-sm focus:border-x-primary focus:ring-primary"
                         placeholder="Lush green grass, blue sky, and a beautiful lake."
                         defaultValue={''}

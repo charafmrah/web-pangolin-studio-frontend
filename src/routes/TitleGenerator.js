@@ -1,13 +1,12 @@
 import React from 'react'
 import Search from '../components/ThumbnailSearch'
-import PageTitle from '../components/PageTitle'
 import GeneratedTitles from '../components/GeneratedTitles'
 
 const TitleGenerator = () => {
     return (
         <div>
 
-            <PageTitle title='YouTube Title Generator'/>
+            <h1>YouTube Title Generator</h1>
 
             <Search />
 

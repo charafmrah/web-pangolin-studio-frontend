@@ -1,12 +1,11 @@
 import React from 'react'
-import PageTitle from '../components/PageTitle.js'
 import { Link } from 'react-router-dom'
 
 const ForgotPassword = () => {
   return (
-    <div className='w-2/3 flex flex-col justify-center'>
-        <div className='border-2 shadow-md shadow-black bg-white rounded-lg pb-16 md:pb-24 mt-16 mx-2 my-2'>
-            <PageTitle title='Password Reset' className=''/>
+    <div className='w-full md:w-2/3 flex flex-col justify-center'>
+        <div className='w-full border-2 shadow-md shadow-black bg-white rounded-lg pb-16 md:pb-24 mt-16 my-2'>
+            <h1 className='text-secondary'>Password Reset</h1>
 
             <div className='flex justify-center mt-5'>
                 <form className='flex flex-col justify-center w-3/5'>

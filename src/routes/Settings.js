@@ -1,10 +1,9 @@
 import React from 'react'
-import PageTitle from '../components/PageTitle'
 
 const Settings = () => {
   return (
     <div>
-        <PageTitle title='Settings'/>
+        <h1>Settings</h1>
     </div>
   )
 }

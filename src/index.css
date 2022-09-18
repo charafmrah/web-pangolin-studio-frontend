@@ -83,11 +83,15 @@
   }
 
   a {
-    @apply font-medium hover:text-primary active:font-bold;
+    @apply font-medium hover:text-primary;
   }
 
   h1 {
-    @apply font-bold text-3xl;
+    @apply flex justify-center text-white text-center font-bold text-3xl md:text-6xl mt-16 md:mt-24 mb-16;
+  }
+
+  input {
+    @apply border-2 focus:border-primary rounded-lg p-2 mt-2;
   }
 }
 

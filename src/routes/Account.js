@@ -1,10 +1,9 @@
 import React from 'react'
-import PageTitle from '../components/PageTitle'
 
 const Account = () => {
     return (
         <div>
-            <PageTitle title='Account'/>
+            <h1>Account</h1>
         </div>
     )
 }

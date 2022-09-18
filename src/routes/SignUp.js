@@ -8,7 +8,7 @@ const SignUp = () => {
         <div className='border-2 shadow-md shadow-black bg-white rounded-lg pb-16 md:pb-24 mt-16 mx-2 my-2'>
             <PageTitle title='Sign Up' className=''/>
 
-            <div className='flex justify-center'>
+            <div className='flex justify-center mt-5'>
                 <form className='flex flex-col justify-center w-3/5'>
                     <label className='text-gray-600 text-xl mt-5'>Email</label>
                     <input className='border-2 rounded-lg p-2 mt-2' type='email' placeholder='you@domain.com' />

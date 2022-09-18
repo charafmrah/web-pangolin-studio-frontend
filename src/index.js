@@ -14,6 +14,7 @@ import TitleGenerator from './routes/TitleGenerator';
 import Settings from './routes/Settings';
 import SignUp from './routes/SignUp';
 import LogIn from './routes/LogIn';
+import ForgotPassword from './routes/ForgotPassword';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,6 +29,7 @@ root.render(
           <Route path='account' element={<Account />} />
           <Route path='signup' element={<SignUp />} />
           <Route path='login' element={<LogIn />} />
+          <Route path='forgot-password' element={<ForgotPassword />} />
           <Route
             path='*'
             element={

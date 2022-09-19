@@ -9,22 +9,28 @@ const SignUp = () => {
   const { signup } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   async function handleSubmit(e) {
     e.preventDefault();
 
+    console.log(
+      emailRef.current.value,
+      passwordRef.current.value,
+      passwordConfirmRef.current.value
+    );
+
     if (passwordRef.current.value !== passwordConfirmRef.current.value) {
-      return setError("Passwords do not match");
+      return setError("Passwords do not match!");
     }
 
     try {
       setError("");
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
-      history.push("/");
+      navigate.push("/");
     } catch {
-      setError("Failed to create an account");
+      setError("Failed to create an account!");
     }
 
     setLoading(false);
@@ -34,7 +40,11 @@ const SignUp = () => {
     <div className="flex flex-col justify-center w-full md:w-2/3">
       <div className="w-full pb-16 my-2 mt-16 bg-white border-2 rounded-lg shadow-md shadow-black md:pb-24">
         <h1 className="text-secondary">Sign Up</h1>
-        {error && <h3>{error}</h3>}
+        {error && (
+          <h3 className="text-xl font-medium text-center text-red-500 md:text-2xl">
+            {error}
+          </h3>
+        )}
 
         <div className="flex justify-center mt-5">
           <form
@@ -42,15 +52,33 @@ const SignUp = () => {
             className="flex flex-col justify-center w-3/5"
           >
             <label className="mt-5 text-xl text-gray-600">Email</label>
-            <input className="" type="email" placeholder="you@domain.com" />
+            <input
+              className=""
+              type="email"
+              placeholder="you@domain.com"
+              ref={emailRef}
+              required
+            />
 
             <label className="mt-5 text-xl text-gray-600">Password</label>
-            <input className="" type="password" placeholder="password" />
+            <input
+              className=""
+              type="password"
+              placeholder="password"
+              ref={passwordRef}
+              required
+            />
 
             <label className="mt-5 text-xl text-gray-600">
               Confirm Password
             </label>
-            <input className="" type="password" placeholder="password" />
+            <input
+              className=""
+              type="password"
+              placeholder="password"
+              ref={passwordConfirmRef}
+              required
+            />
 
             <button
               disabled={loading}

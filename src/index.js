@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./routes/App";
+import Home from "./routes/Home";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ThumbnailGenerator from "./routes/ThumbnailGenerator";
@@ -19,7 +19,7 @@ root.render(
     <BrowserRouter>
       <AuthProvider>
         <Routes>
-          <Route path="/" element={<App />}>
+          <Route path="/" element={<Home />}>
             <Route path="generator" element={<ThumbnailGenerator />} />
             <Route path="title-generator" element={<TitleGenerator />} />
             <Route path="settings" element={<Settings />} />

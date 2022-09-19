@@ -13,43 +13,23 @@
   }
 
   .sidebar-icon {
-    @apply relative flex items-center justify-center 
-    h-12 w-12 mt-2 mb-2 mx-auto  
-  bg-gray-600 hover:bg-primary 
-  text-primary hover:text-white
-    hover:rounded-xl rounded-3xl
-    transition-all duration-300 ease-linear
-    cursor-pointer shadow-lg ;
+    @apply relative flex items-center justify-center w-12 h-12 mx-auto mt-2 mb-2 transition-all duration-300 ease-linear bg-gray-600 shadow-lg cursor-pointer hover:bg-primary text-primary hover:text-white hover:rounded-xl rounded-3xl ;
   }
 
   .sidebar-tooltip {
-    @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md
-    text-white bg-gray-600 
-    text-xs font-bold 
-    transition-all duration-100 scale-0 origin-left;
+    @apply absolute w-auto p-2 m-2 text-xs font-bold text-white transition-all duration-100 origin-left scale-0 bg-gray-600 rounded-md shadow-md min-w-max left-14;
   }
 
   .sidebar-hr {
-    @apply bg-gray-200 dark:bg-gray-800 
-    border border-gray-200 dark:border-gray-800 rounded-full
-    mx-2;
+    @apply mx-2 bg-gray-200 border border-gray-200 rounded-full dark:bg-gray-800 dark:border-gray-800;
   }
 
   .top-navigation {
-    @apply flex flex-row sticky top-0 items-center justify-evenly 
-    bg-gray-300 dark:bg-gray-700 bg-opacity-90 
-    w-full h-auto overflow-hidden
-    px-4 py-4
-    m-0 
-    shadow-lg;
+    @apply sticky top-0 flex flex-row items-center w-full h-auto px-4 py-4 m-0 overflow-hidden bg-gray-300 shadow-lg justify-evenly dark:bg-gray-700 bg-opacity-90;
   }
 
   .top-navigation-icon {
-    @apply text-gray-500
-    mr-3 ml-4
-    transition duration-300 ease-in-out 
-    hover:text-primary 
-    cursor-pointer;
+    @apply ml-4 mr-3 text-gray-500 transition duration-300 ease-in-out cursor-pointer hover:text-primary;
   }
 
   .top-navigation-icon:first {
@@ -57,25 +37,15 @@
   }
 
   .title-text {
-    @apply text-xl md:text-2xl text-white tracking-wider font-semibold text-opacity-80 
-    mr-auto ml-2 my-auto 
-    transition duration-300 ease-in-out;
+    @apply my-auto ml-2 mr-auto text-xl font-semibold tracking-wider text-white transition duration-300 ease-in-out md:text-2xl text-opacity-80;
   }
 
   .search {
-    @apply w-1/5 flex items-center justify-start 
-    bg-gray-400 dark:bg-gray-600
-    text-gray-500
-    px-2 h-9 ml-0 mr-0 
-    rounded-md shadow-md
-    transition duration-300 ease-in-out;
+    @apply flex items-center justify-start w-1/5 px-2 ml-0 mr-0 text-gray-500 transition duration-300 ease-in-out bg-gray-400 rounded-md shadow-md dark:bg-gray-600 h-9;
   }
 
   .search-input {
-    @apply w-full font-sans font-semibold
-    bg-transparent outline-none 
-    text-gray-500  placeholder-gray-500
-    pl-1 rounded;
+    @apply w-full pl-1 font-sans font-semibold text-gray-500 placeholder-gray-500 bg-transparent rounded outline-none;
   }
 
   html {
@@ -87,15 +57,15 @@
   }
 
   h1 {
-    @apply flex justify-center text-white text-center font-bold text-3xl md:text-6xl mt-16 md:mt-24 mb-16;
+    @apply flex justify-center mt-16 mb-16 text-3xl font-bold text-center text-white md:text-6xl md:mt-24;
   }
 
   input {
-    @apply border-2 focus:border-primary rounded-lg p-2 mt-2;
+    @apply p-2 mt-2 border-2 rounded-lg focus:border-primary;
   }
 
   textarea {
-    @apply mt-1 block p-2 w-full rounded-md border-gray-300 shadow-sm focus:border-x-primary focus:ring-primary;
+    @apply block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:border-x-primary focus:ring-primary;
   }
 }
 

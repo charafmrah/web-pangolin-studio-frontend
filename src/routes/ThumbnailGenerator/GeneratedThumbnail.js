@@ -7,7 +7,7 @@ const GeneratedThumbnail = () => {
   return (
     <div className="mt-4 text-center">
       <img className="w-full" alt="" src={image}></img>
-      <button className="w-full mt-2 inline-flex justify-center rounded-md border border-transparent bg-slate-200 py-2 px-4 text-sm font-medium text-black shadow-sm hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+      <button className="inline-flex justify-center w-full px-4 py-2 mt-2 text-sm font-medium text-black border border-transparent rounded-md shadow-sm bg-slate-200 hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
         Download
       </button>
     </div>

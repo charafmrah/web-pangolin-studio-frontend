@@ -3,29 +3,29 @@ import { Link } from "react-router-dom";
 
 const LogIn = () => {
   return (
-    <div className="w-full md:w-2/3 flex flex-col justify-center">
-      <div className="w-full border-2 shadow-md shadow-black bg-white rounded-lg pb-16 md:pb-24 mt-16 my-2">
+    <div className="flex flex-col justify-center w-full md:w-2/3">
+      <div className="w-full pb-16 my-2 mt-16 bg-white border-2 rounded-lg shadow-md shadow-black md:pb-24">
         <h1 className="text-secondary">Log In</h1>
 
         <div className="flex justify-center mt-5">
           <form className="flex flex-col justify-center w-3/5">
-            <label className="text-gray-600 text-xl mt-5">Email</label>
+            <label className="mt-5 text-xl text-gray-600">Email</label>
             <input className="" type="email" placeholder="you@domain.com" />
 
-            <label className="text-gray-600 text-xl mt-5">Password</label>
+            <label className="mt-5 text-xl text-gray-600">Password</label>
             <input className="" type="password" placeholder="Password" />
 
-            <Link to="/forgot-password" className="text-gray-600 text-md mt-5">
+            <Link to="/forgot-password" className="mt-5 text-gray-600 text-md">
               I forgot my password.
             </Link>
 
-            <button className="bg-primary hover:bg-secondary text-white text-xl mt-5 p-2 rounded-lg">
+            <button className="p-2 mt-5 text-xl text-white rounded-lg bg-primary hover:bg-secondary">
               Log in
             </button>
           </form>
         </div>
       </div>
-      <p className=" text-white text-xl mt-5">
+      <p className="mt-5 text-xl text-white ">
         Don't have an account?{" "}
         <Link to="/signup" className="text-primary">
           Sign Up

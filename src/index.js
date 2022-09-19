@@ -31,10 +31,10 @@ root.render(
               path="*"
               element={
                 <main style={{ padding: "1rem" }}>
-                  <h1 className="flex justify-center text-white text-9xl mt-20 mb-5">
+                  <h1 className="flex justify-center mt-20 mb-5 text-white text-9xl">
                     404
                   </h1>
-                  <p className="flex justify-center text-white text-4xl">
+                  <p className="flex justify-center text-4xl text-white">
                     Page not found
                   </p>
                 </main>

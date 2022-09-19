@@ -30,7 +30,7 @@ const UserCircle = () => (
 );
 
 const Title = () => (
-  <Link to={"/"} className="title-text text-2xl">
+  <Link to={"/"} className="text-2xl title-text">
     Creator AI Tools
   </Link>
 );

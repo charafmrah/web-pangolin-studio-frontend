@@ -22,6 +22,10 @@ const Account = () => {
     <div className="flex flex-col">
       <h1>Account</h1>
 
+      <p className="text-white text-center text-xl mb-16">
+        {currentUser.email}
+      </p>
+
       {error && (
         <h3 className="text-xl font-medium text-center text-red-500 md:text-2xl">
           {error}

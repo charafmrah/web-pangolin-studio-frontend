@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const SideBar = () => {
   return (
     <div className="sidebar">
-      <Link to={"/generator"}>
+      <Link to={"/thumbnail-generator"}>
         <SideBarIcon text="Generate a thumbnail" icon={<FaImage size="24" />} />
       </Link>
       <Link to={"/title-generator"}>

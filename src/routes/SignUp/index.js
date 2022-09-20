@@ -22,7 +22,7 @@ const SignUp = () => {
       setError("");
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
-      navigate("/generator");
+      navigate("/thumbnail-generator");
     } catch {
       setError(`Failed to create an account! ${error}`);
     }
@@ -76,7 +76,7 @@ const SignUp = () => {
 
             <button
               disabled={loading}
-              className="p-2 mt-5 text-xl text-white rounded-lg bg-primary hover:bg-secondary"
+              className="p-2 mt-5 text-xl text-white rounded-lg bg-primary hover:text-white hover:bg-secondary"
             >
               Sign up
             </button>

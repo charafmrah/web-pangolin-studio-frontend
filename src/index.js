@@ -20,7 +20,10 @@ root.render(
       <AuthProvider>
         <Routes>
           <Route path="/" element={<Home />}>
-            <Route path="generator" element={<ThumbnailGenerator />} />
+            <Route
+              path="thumbnail-generator"
+              element={<ThumbnailGenerator />}
+            />
             <Route path="title-generator" element={<TitleGenerator />} />
             <Route path="settings" element={<Settings />} />
             <Route path="account" element={<Account />} />

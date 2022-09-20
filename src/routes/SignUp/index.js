@@ -14,12 +14,6 @@ const SignUp = () => {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    console.log(
-      emailRef.current.value,
-      passwordRef.current.value,
-      passwordConfirmRef.current.value
-    );
-
     if (passwordRef.current.value !== passwordConfirmRef.current.value) {
       return setError("Passwords do not match!");
     }
@@ -28,7 +22,7 @@ const SignUp = () => {
       setError("");
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
-      navigate.push("/");
+      navigate.push("/generator");
     } catch {
       setError("Failed to create an account!");
     }

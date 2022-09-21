@@ -1,6 +1,5 @@
 import { BsGearFill } from "react-icons/bs";
 import { FaImage } from "react-icons/fa";
-import { ImTextWidth } from "react-icons/im";
 import { Link } from "react-router-dom";
 
 const SideBar = () => {
@@ -8,9 +7,6 @@ const SideBar = () => {
     <div className="sidebar">
       <Link to={"/thumbnail-generator"}>
         <SideBarIcon text="Generate a thumbnail" icon={<FaImage size="24" />} />
-      </Link>
-      <Link to={"/title-generator"}>
-        <SideBarIcon text="Title Generator" icon={<ImTextWidth size="20" />} />
       </Link>
       <Link to={"/settings"}>
         <SideBarIcon text="Settings" icon={<BsGearFill size="22" />} />

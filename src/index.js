@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import Home from "./routes/Home";
+import HomePage from "./routes/HomePage";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ThumbnailGenerator from "./routes/ThumbnailGenerator";
 import Account from "./routes/Account";
-import TitleGenerator from "./routes/TitleGenerator";
 import Settings from "./routes/Settings";
 import SignUp from "./routes/SignUp";
 import LogIn from "./routes/LogIn";
 import ForgotPassword from "./routes/ForgotPassword";
+import PrivateRoute from "./components/PrivateRoute";
 import { AuthProvider } from "./contexts/AuthContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -19,14 +19,20 @@ root.render(
     <BrowserRouter>
       <AuthProvider>
         <Routes>
-          <Route path="/" element={<Home />}>
+          <Route path="/" element={<HomePage />}>
             <Route
               path="thumbnail-generator"
               element={<ThumbnailGenerator />}
             />
-            <Route path="title-generator" element={<TitleGenerator />} />
             <Route path="settings" element={<Settings />} />
-            <Route path="account" element={<Account />} />
+            <Route
+              path="account"
+              element={
+                <PrivateRoute>
+                  <Account />
+                </PrivateRoute>
+              }
+            />
             <Route path="signup" element={<SignUp />} />
             <Route path="login" element={<LogIn />} />
             <Route path="forgot-password" element={<ForgotPassword />} />

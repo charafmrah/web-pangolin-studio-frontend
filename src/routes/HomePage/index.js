@@ -2,7 +2,7 @@ import TopBar from "../../components/TopBar.js";
 import { Outlet } from "react-router-dom";
 import SideBar from "../../components/Sidebar.js";
 
-function Home() {
+function HomePage() {
   return (
     <>
       <TopBar />
@@ -14,4 +14,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;

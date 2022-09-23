@@ -22,9 +22,20 @@ root.render(
           <Route path="/" element={<HomePage />}>
             <Route
               path="thumbnail-generator"
-              element={<ThumbnailGenerator />}
+              element={
+                <PrivateRoute>
+                  <ThumbnailGenerator />
+                </PrivateRoute>
+              }
             />
-            <Route path="settings" element={<Settings />} />
+            <Route
+              path="settings"
+              element={
+                <PrivateRoute>
+                  <Settings />
+                </PrivateRoute>
+              }
+            />
             <Route
               path="account"
               element={

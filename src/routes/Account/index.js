@@ -11,7 +11,7 @@ const Account = () => {
   const thumbnail = functions.httpsCallable("api/thumbnail");
   thumbnail({ text: "test text" }).then((result) => {
     // Read result of the Cloud Function.
-    var sanitizedMessage = result.data.text;
+    var sanitizedMessage = result.data;
     console.log(sanitizedMessage);
   });
 

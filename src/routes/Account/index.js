@@ -1,19 +1,11 @@
 import React, { useState } from "react";
 import { useAuth } from "../../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
-import { functions } from "../../firebase";
 
 const Account = () => {
   const [error, setError] = useState("");
   const { currentUser, logout } = useAuth();
   const navigate = useNavigate();
-
-  const thumbnail = functions.httpsCallable("api/thumbnail");
-  thumbnail({ text: "test text" }).then((result) => {
-    // Read result of the Cloud Function.
-    var sanitizedMessage = result.data;
-    console.log(sanitizedMessage);
-  });
 
   async function handleLogout() {
     setError("");

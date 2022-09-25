@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const GeneratedThumbnail = () => {
+const GeneratedThumbnail = ({ generatedThumbnail }) => {
   const [image] = useState("flower-thumbnail.png");
 
   return (

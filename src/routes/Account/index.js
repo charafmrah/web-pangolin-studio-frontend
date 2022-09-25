@@ -8,7 +8,7 @@ const Account = () => {
   const { currentUser, logout } = useAuth();
   const navigate = useNavigate();
 
-  const thumbnail = functions.httpsCallable("test");
+  const thumbnail = functions.httpsCallable("api/thumbnail");
   thumbnail({ text: "test text" }).then((result) => {
     // Read result of the Cloud Function.
     var sanitizedMessage = result.data.text;

@@ -1,9 +1,6 @@
 import React from "react";
-import { useState } from "react";
 
-const GeneratedThumbnail = ({ generatedThumbnail }) => {
-  const [image] = useState("flower-thumbnail.png");
-
+const GeneratedThumbnail = ({ image }) => {
   return (
     <div className="mt-4 text-center">
       <img className="w-full" alt="" src={image}></img>

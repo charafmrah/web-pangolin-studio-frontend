@@ -3,7 +3,9 @@ import GeneratedThumbnail from "./GeneratedThumbnail";
 import { functions } from "../../firebase";
 
 const ThumbnailSearch = () => {
-  const [generatedThumbnail, setGeneratedThumbnail] = useState(null);
+  const [generatedThumbnail, setGeneratedThumbnail] = useState(
+    "flower-thumbnail.png"
+  );
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const promptRef = useRef();
@@ -15,8 +17,9 @@ const ThumbnailSearch = () => {
       const thumbnail = functions.httpsCallable("api/thumbnail");
       thumbnail({ text: "test text" }).then((result) => {
         // Read result of the Cloud Function.
+
         setGeneratedThumbnail(result.data);
-        console.log(result.data);
+        console.log(result);
       });
     } catch {
       setError("Failed to generate thumbnail");

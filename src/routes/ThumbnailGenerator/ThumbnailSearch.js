@@ -19,7 +19,7 @@ const ThumbnailSearch = () => {
         // Read result of the Cloud Function.
 
         setGeneratedThumbnail(result.data);
-        console.log(result);
+        console.log(result.data);
       });
     } catch {
       setError("Failed to generate thumbnail");
@@ -45,7 +45,7 @@ const ThumbnailSearch = () => {
             Describe the photo you want the AI to generate.
           </p>
           <button
-            type="submit"
+            type="button"
             className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-primary hover:bg-white hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             disabled={loading}
             onClick={handleThumbnail}

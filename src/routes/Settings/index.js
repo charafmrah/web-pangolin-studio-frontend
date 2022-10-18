@@ -1,10 +1,12 @@
 import React from "react";
+import Toggle from "../../components/Toggle";
 
 const Settings = () => {
-  console.error("hello");
   return (
     <div>
       <h1>Settings</h1>
+
+      <Toggle />
     </div>
   );
 };

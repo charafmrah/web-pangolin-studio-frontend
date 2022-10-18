@@ -1,8 +1,19 @@
 import React, { useState, useRef } from "react";
 import GeneratedThumbnail from "./GeneratedThumbnail";
-import { functions } from "../../firebase";
 
 const ThumbnailSearch = () => {
+  const fetchImage = async (prompt) => {
+    let config = {
+      method: "GET",
+      headers: {},
+      mode: "cors",
+      cache: "default",
+    };
+    let url = "https://api.webpangolin.com/thmbnail?prompt=" + prompt;
+    const res = await fetch(url, config);
+    return res.json();
+  };
+
   const [generatedThumbnail, setGeneratedThumbnail] = useState(
     "flower-thumbnail.png"
   );
@@ -14,13 +25,9 @@ const ThumbnailSearch = () => {
     try {
       setError("");
       setLoading(true);
-      const thumbnail = functions.httpsCallable("api/thumbnail");
-      thumbnail({ text: "test text" }).then((result) => {
-        // Read result of the Cloud Function.
+      const thumbnail = fetchImage(promptRef.current.value);
 
-        setGeneratedThumbnail(result.data);
-        console.log(result.data);
-      });
+      setGeneratedThumbnail(thumbnail);
     } catch {
       setError("Failed to generate thumbnail");
     }

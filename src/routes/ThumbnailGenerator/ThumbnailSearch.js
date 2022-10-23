@@ -2,6 +2,11 @@ import React, { useState, useRef } from "react";
 import GeneratedThumbnail from "./GeneratedThumbnail";
 
 const ThumbnailSearch = () => {
+  const [generatedThumbnail, setGeneratedThumbnail] = useState("");
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const promptRef = useRef();
+
   const fetchImage = async (prompt) => {
     let config = {
       method: "GET",
@@ -10,27 +15,22 @@ const ThumbnailSearch = () => {
       cache: "default",
     };
     let url = "http://127.0.0.1:8000/thumbnail/?prompt=" + prompt;
-    const res = await fetch(url, config);
-
+    const res = await fetch(url, config).then((res) => res.blob());
+    console.log(res);
     const imageObjectURL = URL.createObjectURL(res);
+    console.log(imageObjectURL);
     return imageObjectURL;
   };
-
-  const [generatedThumbnail, setGeneratedThumbnail] = useState(
-    "flower-thumbnail.png"
-  );
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
-  const promptRef = useRef();
 
   async function handleThumbnail() {
     try {
       setError("");
       setLoading(true);
-      const thumbnail = fetchImage(promptRef.current.value);
-
+      const thumbnail = await fetchImage(promptRef.current.value);
       setGeneratedThumbnail(thumbnail);
+      setLoading(false);
     } catch {
+      setLoading(false);
       setError("Failed to generate thumbnail");
     }
   }
@@ -69,7 +69,7 @@ const ThumbnailSearch = () => {
         )}
       </div>
 
-      <GeneratedThumbnail image={generatedThumbnail} />
+      <GeneratedThumbnail image={generatedThumbnail} loading={loading} />
     </>
   );
 };

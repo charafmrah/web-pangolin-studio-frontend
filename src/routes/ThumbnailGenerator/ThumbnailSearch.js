@@ -14,7 +14,7 @@ const ThumbnailSearch = () => {
       mode: "cors",
       cache: "default",
     };
-    let url = "http://api.webpangolin.com/thumbnail/?prompt=" + prompt;
+    let url = "http://127.0.0.1:8000/thumbnail/?prompt=" + prompt;
     const res = await fetch(url, config).then((res) => res.blob());
     console.log(res);
     const imageObjectURL = URL.createObjectURL(res);

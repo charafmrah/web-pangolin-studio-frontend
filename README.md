@@ -129,5 +129,5 @@ Charaf Mrah - [@charafmrah](https://twitter.com/charafmrah) - charaf4charaf@gmai
 [react-url]: https://reactjs.org/
 [tailwindcss.com]: https://img.shields.io/badge/Tailwind-563D7C?style=for-the-badge&logo=tailwindcss&logoColor=white
 [tailwind-url]: https://tailwindcss.com
-[javascript]: https://img.shields.io/badge/JavaScript-ffeb3b?style=for-the-badge&logo=javascript&logoColor=white
+[javascript]: https://img.shields.io/badge/JavaScript-f7df1e?style=for-the-badge&logo=javascript&logoColor=black
 [javascript-url]: https://javascript.com

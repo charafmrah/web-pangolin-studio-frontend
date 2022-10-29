@@ -31,7 +31,7 @@ const UserCircle = () => (
 
 const Title = () => (
   <Link to={"/"} className="text-2xl title-text">
-    Creator AI Tools
+    Web Pangolin Studio
   </Link>
 );
 

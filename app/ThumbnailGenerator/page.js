@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import ThumbnailSearch from "./ThumbnailSearch";
 import { QueryClient, QueryClientProvider } from "react-query";

@@ -1,6 +1,6 @@
-import TopBar from "../../components/TopBar.js";
+import TopBar from "../components/TopBar.js";
 import { Outlet } from "react-router-dom";
-import SideBar from "../../components/Sidebar.js";
+import SideBar from "../components/Sidebar.js";
 
 function HomePage() {
   return (

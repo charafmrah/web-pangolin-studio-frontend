@@ -1,5 +1,5 @@
+import Link from "next/link";
 import { FaUserCircle, FaInfoCircle } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const TopBar = () => {
   return (
@@ -24,15 +24,15 @@ const SupportIcon = () => (
 );
 
 const UserCircle = () => (
-  <Link to={"/account"}>
+  <Link href="/account">
     <FaUserCircle size="36" className="top-navigation-icon" />
   </Link>
 );
 
 const Title = () => (
-  <Link to={"/"} className="text-2xl title-text">
-    Web Pangolin Studio
-  </Link>
+  <div className="text-2xl title-text">
+    <Link href="/">Web Pangolin Studio</Link>
+  </div>
 );
 
 export default TopBar;

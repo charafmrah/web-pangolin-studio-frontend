@@ -1,12 +1,14 @@
-import React from "react";
-import { Navigate } from "react-router-dom";
+"use client";
+
 import { useAuth } from "../contexts/AuthContext";
+import { useRouter } from "next/router";
 
 const PrivateRoute = ({ children }) => {
   const { currentUser } = useAuth();
+  const router = useRouter();
 
   if (!currentUser) {
-    return <Navigate to="/signup" />;
+    router.push("/signup");
   }
   return children;
 };

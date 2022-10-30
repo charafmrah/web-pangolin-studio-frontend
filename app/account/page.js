@@ -2,19 +2,19 @@
 
 import React, { useState } from "react";
 import { useAuth } from "../../contexts/AuthContext";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/router";
 
 export default function Account() {
   const [error, setError] = useState("");
   const { currentUser, logout } = useAuth();
-  const navigate = useNavigate();
+  const router = useRouter();
 
   async function handleLogout() {
     setError("");
 
     try {
       await logout();
-      navigate("/login");
+      router.push("/login");
     } catch {
       setError("Failed to log out");
     }

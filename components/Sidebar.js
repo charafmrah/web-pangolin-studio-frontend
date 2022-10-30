@@ -1,14 +1,14 @@
+import Link from "next/link";
 import { BsGearFill } from "react-icons/bs";
 import { FaImage } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const SideBar = () => {
   return (
     <div className="sidebar">
-      <Link to={"/thumbnail-generator"}>
+      <Link href="/thumbnail-generator">
         <SideBarIcon text="Generate a thumbnail" icon={<FaImage size="24" />} />
       </Link>
-      <Link to={"/settings"}>
+      <Link href="/settings">
         <SideBarIcon text="Settings" icon={<BsGearFill size="22" />} />
       </Link>
     </div>

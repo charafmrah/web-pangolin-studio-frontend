@@ -1,3 +1,11 @@
+"use client";
+
+import React from "react";
+import TopBar from "../components/TopBar";
+import SideBar from "../components/Sidebar";
+import { AuthProvider } from "../contexts/AuthContext";
+import PrivateRoute from "../components/PrivateRoute";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -27,7 +35,17 @@ export default function RootLayout({ children }) {
       --> */}
         <title>Web Pangolin Studio</title>
       </head>
-      <body>{children}</body>
+      <body>
+        <AuthProvider>
+          <PrivateRoute>
+            <TopBar />
+            <SideBar />
+            <div className="flex justify-center min-h-screen px-5 pb-5 md:pb-10 lg:pl-80 lg:pr-80">
+              {children}
+            </div>
+          </PrivateRoute>
+        </AuthProvider>
+      </body>
     </html>
   );
 }

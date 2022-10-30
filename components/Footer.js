@@ -1,6 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-
 const Footer = () => {
   return (
     <footer className="flex justify-center p-5 mt-20 text-sm text-white md:justify-end md:text-base">

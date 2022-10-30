@@ -2,16 +2,16 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "styles/globals.css";
-import HomePage from "./HomePage";
+import "../styles/globals.css";
+import HomePage from "./HomePage/layout";
 import reportWebVitals from "../utils/reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ThumbnailGenerator from "./ThumbnailGenerator";
-import Account from "./Account";
-import Settings from "./Settings";
-import SignUp from "./SignUp";
-import LogIn from "./LogIn";
-import ForgotPassword from "./ForgotPassword";
+import ThumbnailGenerator from "./ThumbnailGenerator/layout";
+import Account from "./Account/layout";
+import Settings from "./Settings/layout";
+import SignUp from "./SignUp/layout";
+import LogIn from "./LogIn/layout";
+import ForgotPassword from "./ForgotPassword/layout";
 import PrivateRoute from "../components/PrivateRoute";
 import { AuthProvider } from "../contexts/AuthContext";
 

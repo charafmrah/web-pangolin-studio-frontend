@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { useAuth } from "../../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 
-const Account = () => {
+export default function Account() {
   const [error, setError] = useState("");
   const { currentUser, logout } = useAuth();
   const navigate = useNavigate();
@@ -35,6 +35,4 @@ const Account = () => {
       <button onClick={handleLogout}>Log Out</button>
     </div>
   );
-};
-
-export default Account;
+}

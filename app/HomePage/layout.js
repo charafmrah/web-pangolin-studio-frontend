@@ -1,8 +1,10 @@
-import TopBar from "../components/TopBar.js";
-import { Outlet } from "react-router-dom";
-import SideBar from "../components/Sidebar.js";
+"use client";
 
-function HomePage() {
+import TopBar from "../../components/TopBar";
+import { Outlet } from "react-router-dom";
+import SideBar from "../../components/Sidebar";
+
+export default function HomePage() {
   return (
     <>
       <TopBar />
@@ -13,5 +15,3 @@ function HomePage() {
     </>
   );
 }
-
-export default HomePage;

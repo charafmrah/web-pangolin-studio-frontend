@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Major+Mono+Display&family=Space+Mono&display=swap');
+
 @layer components {
   
   .sidebar{
@@ -69,7 +71,7 @@
   }
 
   button {
-    @apply px-4 py-2 font-semibold text-white transition duration-300 ease-in-out bg-primary rounded-md shadow-md hover:text-black hover:bg-white;
+    @apply px-4 py-2 font-semibold text-white transition duration-300 ease-in-out rounded-md shadow-md bg-primary hover:text-black hover:bg-white;
   }
 }
 

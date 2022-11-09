@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import GeneratedThumbnail from "./GeneratedThumbnail";
+import GeneratedThumbnail from "./GeneratedImage";
 
 const ThumbnailSearch = () => {
   const [generatedThumbnail, setGeneratedThumbnail] = useState("");

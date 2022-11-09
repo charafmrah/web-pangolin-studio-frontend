@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const SideBar = () => {
   return (
     <div className="sidebar">
-      <Link to={"/thumbnail-generator"}>
+      <Link to={"/image-generator"}>
         <SideBarIcon
           text="Generate a thumbnail"
           icon={<FaPaintBrush size="24" />}

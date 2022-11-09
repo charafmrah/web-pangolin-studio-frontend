@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import HomePage from "./routes/HomePage";
-import reportWebVitals from "./reportWebVitals";
+import reportWebVitals from "./utils/reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ThumbnailGenerator from "./routes/ThumbnailGenerator";
+import ImageGenerator from "./routes/ImageGenerator";
 import Account from "./routes/Account";
 import Settings from "./routes/Settings";
 import SignUp from "./routes/SignUp";
@@ -23,10 +23,10 @@ root.render(
         <Routes>
           <Route path="/" element={<HomePage />}>
             <Route
-              path="thumbnail-generator"
+              path="image-generator"
               element={
                 <PrivateRoute>
-                  <ThumbnailGenerator />
+                  <ImageGenerator />
                 </PrivateRoute>
               }
             />

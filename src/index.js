@@ -46,8 +46,22 @@ root.render(
                 </PrivateRoute>
               }
             />
-            <Route path="shop" element={<Shop />} />
-            <Route path="gallery" element={<Gallery />} />
+            <Route
+              path="shop"
+              element={
+                <PrivateRoute>
+                  <Shop />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="gallery"
+              element={
+                <PrivateRoute>
+                  <Gallery />
+                </PrivateRoute>
+              }
+            />
             <Route path="signup" element={<SignUp />} />
             <Route path="login" element={<LogIn />} />
             <Route path="forgot-password" element={<ForgotPassword />} />

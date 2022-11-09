@@ -51,11 +51,11 @@
   }
 
   .top-navigation {
-    @apply sticky top-0 flex flex-row items-center w-full h-auto px-4 py-4 m-0 overflow-hidden bg-gray-300 shadow-lg justify-evenly dark:bg-gray-700 bg-opacity-90;
+    @apply sticky top-0 flex flex-row items-center w-full h-auto px-4 py-4 m-0 overflow-hidden bg-gray-300 shadow-lg justify-evenly dark:bg-gray-700 bg-opacity-90 hover:text-white;
   }
 
   .top-navigation-icon {
-    @apply ml-4 mr-3 text-gray-500 transition duration-300 ease-in-out cursor-pointer hover:text-primar;
+    @apply ml-4 mr-3 text-gray-500 transition duration-300 ease-in-out cursor-pointer hover:text-white;
   }
 
   .top-navigation-icon:first {
@@ -63,7 +63,7 @@
   }
 
   .title-text {
-    @apply my-auto ml-2 mr-auto text-xl font-semibold tracking-wider text-white transition duration-300 ease-in-out md:text-2xl text-opacity-80;
+    @apply my-auto ml-2 mr-auto text-xl font-semibold tracking-wider text-white transition duration-300 ease-in-out md:text-2xl hover:text-white text-opacity-80;
   }
 
   .search {

@@ -1,11 +1,10 @@
 import React from "react";
-import { getStorage, ref, uploadBytes } from "firebase/storage";
+import { storage } from "../../utils/firebase";
 
 const GeneratedThumbnail = ({ image, loading }) => {
   async function handleSave() {
-    const storage = getStorage();
-    const storageRef = ref(storage, image);
-    uploadBytes(storageRef, image).then((snapshot) => {
+    const storageRef = storage.ref(storage, image);
+    storage.uploadBytes(storageRef, image).then((snapshot) => {
       console.log("Uploaded a blob or file!");
     });
   }

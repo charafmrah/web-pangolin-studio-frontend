@@ -15,7 +15,7 @@
   }
 
   h1 {
-    @apply flex justify-center mt-5 mb-5 md:mb-16 text-3xl font-bold text-center text-white md:text-6xl md:mt-24;
+    @apply flex justify-center mt-5 mb-5 md:mt-8 md:mb-16 md:text-6xl text-3xl font-bold text-center text-white ;
   }
 
   input {
@@ -55,7 +55,7 @@
   }
 
   .top-navigation-icon {
-    @apply ml-4 mr-3 text-gray-500 transition duration-300 ease-in-out cursor-pointer hover:text-primary;
+    @apply ml-4 mr-3 text-gray-500 transition duration-300 ease-in-out cursor-pointer hover:text-primar;
   }
 
   .top-navigation-icon:first {

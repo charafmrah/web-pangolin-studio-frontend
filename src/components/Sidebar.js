@@ -9,24 +9,24 @@ const SideBar = () => {
     <div className="sidebar">
       <Link to={"/image-generator"}>
         <SideBarIcon
-          text="Generate a thumbnail"
+          text="🎨 Generate an image"
           icon={<FaPaintBrush size="24" />}
         />
       </Link>
 
       <Link to={"/gallery"}>
-        <SideBarIcon text="Gallery" icon={<FaImages size="24" />} />
+        <SideBarIcon text="🖼️ Gallery" icon={<FaImages size="24" />} />
       </Link>
 
       <Link to={"/shop"}>
         <SideBarIcon
-          text="Shop for styles"
+          text="🛍️ Shop for styles"
           icon={<FaShoppingBag size="23" />}
         />
       </Link>
 
       <Link to={"/settings"}>
-        <SideBarIcon text="Settings" icon={<BsGearFill size="22" />} />
+        <SideBarIcon text="⚙️ Settings" icon={<BsGearFill size="22" />} />
       </Link>
     </div>
   );

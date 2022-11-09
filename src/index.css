@@ -15,7 +15,7 @@
   }
 
   h1 {
-    @apply flex justify-center mt-8 mb-5 md:mb-16 text-3xl font-bold text-center text-white md:text-6xl md:mt-24;
+    @apply flex justify-center mt-5 mb-5 md:mb-16 text-3xl font-bold text-center text-white md:text-6xl md:mt-24;
   }
 
   input {
@@ -23,7 +23,7 @@
   }
 
   textarea {
-    @apply block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:border-x-primary focus:ring-primary;
+    @apply block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-[#D07A3B] focus:border-x-[#D07A3B]  ;
   }
 
   button {
@@ -43,7 +43,7 @@
   }
 
   .sidebar-tooltip {
-    @apply invisible lg:visible absolute w-auto p-2 m-2 text-xs font-bold text-white transition-all duration-100 origin-left scale-0 bg-gray-600 rounded-md shadow-md min-w-max left-14;
+    @apply absolute w-auto p-2 m-2 text-xs font-bold text-white transition-all duration-100 origin-left scale-0 bg-gray-600 rounded-md shadow-md min-w-max left-14;
   }
 
   .sidebar-hr {

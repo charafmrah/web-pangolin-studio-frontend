@@ -13,6 +13,7 @@ import ForgotPassword from "./routes/ForgotPassword";
 import PrivateRoute from "./components/PrivateRoute";
 import { AuthProvider } from "./contexts/AuthContext";
 import Shop from "./routes/Shop";
+import Gallery from "./routes/Gallery";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -46,6 +47,7 @@ root.render(
               }
             />
             <Route path="shop" element={<Shop />} />
+            <Route path="gallery" element={<Gallery />} />
             <Route path="signup" element={<SignUp />} />
             <Route path="login" element={<LogIn />} />
             <Route path="forgot-password" element={<ForgotPassword />} />

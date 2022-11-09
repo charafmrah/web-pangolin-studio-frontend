@@ -19,7 +19,7 @@ const GeneratedThumbnail = ({ image, loading }) => {
           className="inline-flex justify-center w-full px-4 py-2 mt-2 text-sm font-medium text-black hover:text-white border border-transparent rounded-md shadow-sm bg-slate-200 hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           onClick={handleSave}
         >
-          Save
+          Save to gallery
         </button>
       )}
     </div>

@@ -6,6 +6,30 @@
 
 @layer components {
   
+  html {
+    @apply bg-secondary font-[Inter];
+  }
+
+  a {
+    @apply font-medium hover:text-primary;
+  }
+
+  h1 {
+    @apply flex justify-center mt-8 mb-5 md:mb-16 text-3xl font-bold text-center text-white md:text-6xl md:mt-24;
+  }
+
+  input {
+    @apply p-2 mt-2 border-2 rounded-lg focus:border-primary;
+  }
+
+  textarea {
+    @apply block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:border-x-primary focus:ring-primary;
+  }
+
+  button {
+    @apply px-4 py-2 font-semibold text-white transition duration-300 ease-in-out rounded-md shadow-md bg-primary hover:text-black hover:bg-white;
+  }
+
   .sidebar{
     @apply flex flex-row justify-center md:flex-col 
     gap-5 md:gap-2
@@ -19,7 +43,7 @@
   }
 
   .sidebar-tooltip {
-    @apply absolute w-auto p-2 m-2 text-xs font-bold text-white transition-all duration-100 origin-left scale-0 bg-gray-600 rounded-md shadow-md min-w-max left-14;
+    @apply invisible lg:visible absolute w-auto p-2 m-2 text-xs font-bold text-white transition-all duration-100 origin-left scale-0 bg-gray-600 rounded-md shadow-md min-w-max left-14;
   }
 
   .sidebar-hr {
@@ -50,28 +74,5 @@
     @apply w-full pl-1 font-sans font-semibold text-gray-500 placeholder-gray-500 bg-transparent rounded outline-none;
   }
 
-  html {
-    @apply bg-secondary font-[Inter];
-  }
-
-  a {
-    @apply font-medium hover:text-primary;
-  }
-
-  h1 {
-    @apply flex justify-center mt-16 mb-16 text-3xl font-bold text-center text-white md:text-6xl md:mt-24;
-  }
-
-  input {
-    @apply p-2 mt-2 border-2 rounded-lg focus:border-primary;
-  }
-
-  textarea {
-    @apply block w-full p-2 mt-1 border-gray-300 rounded-md shadow-sm focus:border-x-primary focus:ring-primary;
-  }
-
-  button {
-    @apply px-4 py-2 font-semibold text-white transition duration-300 ease-in-out rounded-md shadow-md bg-primary hover:text-black hover:bg-white;
-  }
 }
 

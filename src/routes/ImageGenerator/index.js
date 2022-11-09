@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 const ThumbnailGenerator = () => {
   const queryClient = new QueryClient();
   return (
-    <div>
+    <div className="min-w-[50%]">
       <h1>Image Generator</h1>
       <QueryClientProvider client={queryClient}>
         <ThumbnailSearch />

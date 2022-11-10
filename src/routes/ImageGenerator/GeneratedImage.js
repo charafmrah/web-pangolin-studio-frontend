@@ -1,11 +1,42 @@
 import React from "react";
-import { storage } from "../../utils/firebase";
+import { storage, db } from "../../utils/firebase";
+import { v4 as uuidv4 } from "uuid";
+import { useAuth } from "../../contexts/AuthContext";
 
-const GeneratedThumbnail = ({ image, loading }) => {
+const GeneratedImage = ({ image, loading }) => {
+  const { currentUser } = useAuth();
+  console.log(currentUser.uid);
+
   async function handleSave() {
-    const storageRef = storage.ref(storage, image);
-    storage.uploadBytes(storageRef, image).then((snapshot) => {
-      console.log("Uploaded a blob or file!");
+    var metadata = {
+      contentType: "image/png",
+    };
+
+    // Create a reference to the image
+    let blob = await fetch(image).then((r) => r.blob());
+
+    var imageRef = storage.ref().child("images/" + uuidv4() + ".png");
+
+    imageRef.put(blob, metadata).then((snapshot) => {
+      // get the download URL from storage
+      imageRef.getDownloadURL().then((url) => {
+        db.collection("generated-images")
+          .doc()
+          .set({
+            prompt: "cat",
+            public: false,
+            styleId: "default",
+            url: url,
+
+            userId: "test",
+          })
+          .then(() => {
+            console.log("Document successfully written!");
+          })
+          .catch((error) => {
+            console.error("Error writing document: ", error);
+          });
+      });
     });
   }
 
@@ -25,4 +56,4 @@ const GeneratedThumbnail = ({ image, loading }) => {
   );
 };
 
-export default GeneratedThumbnail;
+export default GeneratedImage;

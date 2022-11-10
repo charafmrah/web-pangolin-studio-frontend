@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
-import GeneratedThumbnail from "./GeneratedImage";
+import GeneratedImage from "./GeneratedImage";
 
-const ThumbnailSearch = () => {
-  const [generatedThumbnail, setGeneratedThumbnail] = useState("");
+const ImageSearch = () => {
+  const [generatedImageURL, setGeneratedImageURL] = useState(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const promptRef = useRef();
@@ -15,29 +15,30 @@ const ThumbnailSearch = () => {
       cache: "default",
     };
     let url = process.env.REACT_APP_DJANGO_URL + "thumbnail/?prompt=" + prompt;
+
     const res = await fetch(url, config).then((res) => res.blob());
     const imageObjectURL = URL.createObjectURL(res);
     return imageObjectURL;
   };
 
-  async function handleThumbnail(e) {
+  async function handleImage(e) {
     e.preventDefault();
 
     try {
       setError("");
       setLoading(true);
-      const thumbnail = await fetchImage(promptRef.current.value);
-      setGeneratedThumbnail(thumbnail);
+      const imageObjectURL = await fetchImage(promptRef.current.value);
+      setGeneratedImageURL(imageObjectURL);
       setLoading(false);
     } catch {
       setLoading(false);
-      setError("Failed to generate thumbnail");
+      setError("Failed to generate image");
     }
   }
 
   return (
     <>
-      <form onSubmit={handleThumbnail}>
+      <form onSubmit={handleImage}>
         <div className="mt-1">
           <textarea
             id="description"
@@ -66,10 +67,10 @@ const ThumbnailSearch = () => {
             {error}
           </h3>
         )}
-        <GeneratedThumbnail image={generatedThumbnail} loading={loading} />
+        <GeneratedImage image={generatedImageURL} loading={loading} />
       </form>
     </>
   );
 };
 
-export default ThumbnailSearch;
+export default ImageSearch;

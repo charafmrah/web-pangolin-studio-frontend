@@ -11,6 +11,7 @@ const Gallery = () => {
       .where("userId", "==", currentUser.uid)
       .get()
       .then((querySnapshot) => {
+        setImagesURLs([]);
         querySnapshot.forEach((doc) => {
           setImagesURLs((imagesURLs) => [...imagesURLs, doc.data().url]);
         });

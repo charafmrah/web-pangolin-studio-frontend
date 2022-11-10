@@ -5,9 +5,10 @@ import { useAuth } from "../../contexts/AuthContext";
 
 const GeneratedImage = ({ image, loading }) => {
   const { currentUser } = useAuth();
-  console.log(currentUser.uid);
 
-  async function handleSave() {
+  async function handleSave(e) {
+    e.preventDefault();
+
     var metadata = {
       contentType: "image/png",
     };
@@ -23,18 +24,17 @@ const GeneratedImage = ({ image, loading }) => {
         db.collection("generated-images")
           .doc()
           .set({
-            prompt: "cat",
+            prompt: "",
             public: false,
             styleId: "default",
             url: url,
-
-            userId: "test",
+            userId: currentUser.uid,
           })
           .then(() => {
             console.log("Document successfully written!");
           })
           .catch((error) => {
-            console.error("Error writing document: ", error);
+            console.error("Error writing document");
           });
       });
     });
@@ -44,7 +44,7 @@ const GeneratedImage = ({ image, loading }) => {
     <div className="mt-4 text-center">
       <img className="w-full" alt="" src={image}></img>
 
-      {image !== "" && (
+      {image !== null && (
         <button
           className="inline-flex justify-center w-full px-4 py-2 mt-2 text-sm font-medium text-black hover:text-white border border-transparent rounded-md shadow-sm bg-slate-200 hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           onClick={handleSave}

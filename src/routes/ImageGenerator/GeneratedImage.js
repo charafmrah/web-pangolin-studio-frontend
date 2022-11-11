@@ -2,6 +2,7 @@ import React from "react";
 import { storage, db } from "../../utils/firebase";
 import { v4 as uuidv4 } from "uuid";
 import { useAuth } from "../../contexts/AuthContext";
+import { GridLoader } from "react-spinners";
 
 const GeneratedImage = ({ image, loading }) => {
   const { currentUser } = useAuth();
@@ -32,6 +33,7 @@ const GeneratedImage = ({ image, loading }) => {
           })
           .then(() => {
             console.log("Document successfully written!");
+            image = null;
           })
           .catch((error) => {
             console.error("Error writing document");
@@ -42,9 +44,13 @@ const GeneratedImage = ({ image, loading }) => {
 
   return (
     <div className="mt-4 text-center">
-      <img className="w-full" alt="" src={image}></img>
+      {loading ? (
+        <GridLoader color={"#D07A3B"} size={150} />
+      ) : (
+        <img className="w-96" alt="" src={image}></img>
+      )}
 
-      {image !== null && (
+      {image !== null && !loading && (
         <button
           className="inline-flex justify-center w-full px-4 py-2 mt-2 text-sm font-medium text-black hover:text-white border border-transparent rounded-md shadow-sm bg-slate-200 hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           onClick={handleSave}

@@ -52,7 +52,7 @@ const ImageSearch = () => {
 
         <div className="flex justify-between mt-2">
           <p className="text-sm md:text-base text-slate-100 pr-2">
-            Describe the photo you want the AI to generate.
+            Describe the image you want the AI to generate.
           </p>
           <button
             type="submit"

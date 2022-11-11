@@ -43,11 +43,11 @@ const GeneratedImage = ({ image, loading }) => {
   }
 
   return (
-    <div className="mt-11 text-center">
+    <div className="md:max-w-[70%] lg:max-w-[50%] mt-11 mr-auto ml-auto">
       {loading ? (
         <GridLoader color={"#D07A3B"} size={120} className="max-w-full" />
       ) : (
-        <img className="w-96" alt="" src={image}></img>
+        <img className="w-full rounded-md shadow-lg" alt="" src={image}></img>
       )}
 
       {image !== null && !loading && (

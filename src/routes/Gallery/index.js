@@ -25,16 +25,22 @@ const Gallery = () => {
   }, [currentUser.uid]);
 
   return (
-    <div className="">
+    <div>
       <h1>Gallery</h1>
       {loading ? (
-        <RiseLoader color={"#D07A3B"} size={50} className="pt-10" />
+        <div className="min-h-[60%] flex flex-col justify-center items-center">
+          <RiseLoader color={"#D07A3B"} size={30} />
+        </div>
       ) : (
         <div className="flex flex-wrap max-w-6xl">
           {imagesURLs.map((image) => {
             return (
-              <div className="w-1/4 p-2">
-                <img src={image} alt="" className="rounded-md shadow-lg" />
+              <div className="w-1/4 min-w-fit p-2">
+                <img
+                  src={image}
+                  alt=""
+                  className="w-full rounded-md shadow-lg"
+                />
               </div>
             );
           })}

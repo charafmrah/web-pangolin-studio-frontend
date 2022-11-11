@@ -19,7 +19,7 @@
   }
 
   h1 {
-    @apply flex justify-center mt-5 mb-5 md:mt-8 md:mb-16 md:text-6xl text-3xl font-bold text-center text-white ;
+    @apply flex justify-center mt-5 mb-5 md:mt-10 md:mb-16 md:text-6xl text-4xl font-bold text-center text-white ;
   }
 
   input {

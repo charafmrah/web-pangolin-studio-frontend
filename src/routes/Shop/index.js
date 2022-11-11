@@ -20,13 +20,22 @@ const Shop = () => {
   }, []);
 
   return (
-    <div className="">
-      <h1>Gallery</h1>
-      <div className="flex flex-wrap max-w-6xl">
+    <div>
+      <h1 className="mb-2 md:mb-5">Shop</h1>
+      <p className="text-white text-center mb-5 md:mb-16">
+        Discover and add new styles to your toolbox
+      </p>
+      <div className="flex flex-wrap overflow-hidden justify-center gap-5 max-w-full">
         {styles.map((style) => {
           return (
-            <div className="w-1/4 p-2 transition ease-in-out">
-              <p className="text-white text-lg ">{style.name}</p>
+            <div className=" min-w-min md:w-1/4 shadow-lg rounded-md bg-primary">
+              <img src={style.image} alt="" className="w-full shadow-lg" />
+
+              <div className="p-2 text-white">
+                <h3 className=" text-white text-lg font-bold">{style.name}</h3>
+                <p>{style.description}</p>
+                <p className="font-bold text-2xl">${style.price}</p>
+              </div>
             </div>
           );
         })}

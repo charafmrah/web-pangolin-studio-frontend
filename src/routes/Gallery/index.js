@@ -26,13 +26,13 @@ const Gallery = () => {
 
   return (
     <div>
-      <h1>Gallery</h1>
+    <h1>My Gallery</h1>
       {loading ? (
         <div className="min-h-[60%] flex flex-col justify-center items-center">
           <RiseLoader color={"#D07A3B"} size={30} />
         </div>
       ) : (
-        <div className="flex flex-wrap max-w-6xl">
+        <div className="flex flex-wrap justify-center max-w-6xl">
           {imagesURLs.map((image) => {
             return (
               <div className="w-1/4 min-w-fit p-2">

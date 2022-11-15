@@ -43,7 +43,8 @@ const ImageSearch = () => {
           <textarea
             id="description"
             name="description"
-            rows={3}
+            rows={2}
+            autoFocus={true}
             ref={promptRef}
             placeholder="Lush green grass, blue sky, and a beautiful lake."
             defaultValue={""}

@@ -30,9 +30,12 @@ const UserCircle = () => (
 );
 
 const Title = () => (
-  <Link to={"/"} className="text-2xl title-text">
-    Web Pangolin Studio
-  </Link>
+  <>
+    <Link to={"/"} className="flex gap-3 text-2xl title-text">
+      <img src="/logo1000.png" width={30} alt="logo"></img>
+      Web Pangolin Studio
+    </Link>
+  </>
 );
 
 export default TopBar;

@@ -15,7 +15,7 @@ const SideBar = () => {
       </Link>
 
       <Link to={"/gallery"}>
-        <SideBarIcon text="🖼️ Gallery" icon={<FaImages size="24" />} />
+        <SideBarIcon text="🖼️ My gallery" icon={<FaImages size="24" />} />
       </Link>
 
       <Link to={"/shop"}>

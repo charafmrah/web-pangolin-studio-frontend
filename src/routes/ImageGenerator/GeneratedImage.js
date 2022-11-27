@@ -43,16 +43,20 @@ const GeneratedImage = ({ image, loading }) => {
   }
 
   return (
-    <div className="md:max-w-[70%] lg:max-w-[50%] mt-11 mr-auto ml-auto">
+    <div className="ml-auto mr-auto mt-11">
       {loading ? (
-        <GridLoader color={"#D07A3B"} size={120} className="max-w-full" />
+        <GridLoader color={"#D07A3B"} size={120} className="min-w-full" />
       ) : (
-        <img className="w-full rounded-md shadow-lg" alt="" src={image}></img>
+        <img
+          className="md:max-w-[70%] lg:max-w-[50%] w-full rounded-md shadow-lg"
+          alt=""
+          src={image}
+        ></img>
       )}
 
       {image !== null && !loading && (
         <button
-          className="inline-flex justify-center w-full px-4 py-2 mt-2 text-sm font-medium text-black hover:text-white border border-transparent rounded-md shadow-sm bg-slate-200 hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+          className="inline-flex justify-center w-full px-4 py-2 mt-2 text-sm font-medium text-black border border-transparent rounded-md shadow-sm hover:text-white bg-slate-200 hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           onClick={handleSave}
         >
           Save to gallery

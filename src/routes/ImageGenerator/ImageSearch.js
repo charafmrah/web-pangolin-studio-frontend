@@ -29,7 +29,7 @@ const ImageSearch = () => {
       setLoading(true);
       const imageObjectURL = await fetchImage(promptRef.current.value);
       setGeneratedImageURL(imageObjectURL);
-      setLoading(false);
+      // setLoading(false);
     } catch {
       setLoading(false);
       setError("Failed to generate image");
@@ -52,7 +52,7 @@ const ImageSearch = () => {
         </div>
 
         <div className="flex justify-between mt-2">
-          <p className="text-sm md:text-base text-slate-100 pr-2">
+          <p className="pr-2 text-sm md:text-base text-slate-100">
             Describe the image you want the AI to generate.
           </p>
           <button

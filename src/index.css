@@ -1,13 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Major+Mono+Display&family=Space+Mono&display=swap');
-
 @layer components {
   
   html {
-    @apply bg-secondary font-[Inter];
+    @apply bg-secondary font-Inter;
   }
 
   html {
@@ -19,7 +19,7 @@
   }
 
   h1 {
-    @apply flex justify-center mt-5 mb-5 md:mt-10 md:mb-16 md:text-6xl  text-4xl font-bold text-center text-white ;
+    @apply flex justify-center mt-5 mb-5 text-4xl font-bold text-center text-white md:mt-10 md:mb-16 md:text-6xl ;
   }
 
   input {
@@ -47,7 +47,7 @@
   }
 
   .sidebar-tooltip {
-    @apply invisible lg:visible absolute w-auto p-2 m-2 text-xs font-bold text-white transition-all duration-100 origin-left scale-0 bg-gray-600 rounded-md shadow-md min-w-max left-14;
+    @apply absolute invisible w-auto p-2 m-2 text-xs font-bold text-white transition-all duration-100 origin-left scale-0 bg-gray-600 rounded-md shadow-md lg:visible min-w-max left-14;
   }
 
   .sidebar-hr {

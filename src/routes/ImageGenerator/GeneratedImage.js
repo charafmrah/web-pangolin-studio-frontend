@@ -43,9 +43,9 @@ const GeneratedImage = ({ image, loading }) => {
   }
 
   return (
-    <div className="ml-auto mr-auto mt-11">
+    <div className="flex flex-col items-center ml-auto mr-auto mt-11">
       {loading ? (
-        <GridLoader color={"#D07A3B"} size={120} className="min-w-full" />
+        <GridLoader color={"#D07A3B"} size={120} />
       ) : (
         <img
           className="md:max-w-[70%] lg:max-w-[50%] w-full rounded-md shadow-lg"

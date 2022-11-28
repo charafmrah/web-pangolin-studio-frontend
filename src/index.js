@@ -14,6 +14,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import { AuthProvider } from "./contexts/AuthContext";
 import Shop from "./routes/Shop";
 import Gallery from "./routes/Gallery";
+import ImageCard from "./routes/Gallery/ImageCard";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -61,7 +62,9 @@ root.render(
                   <Gallery />
                 </PrivateRoute>
               }
-            />
+            >
+              <Route path=":id" element={<ImageCard />} />
+            </Route>
             <Route path="signup" element={<SignUp />} />
             <Route path="login" element={<LogIn />} />
             <Route path="forgot-password" element={<ForgotPassword />} />

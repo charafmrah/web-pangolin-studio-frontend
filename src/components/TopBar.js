@@ -32,8 +32,12 @@ const UserCircle = () => (
 const Title = () => (
   <>
     <Link to={"/"} className="flex gap-3 text-2xl title-text">
-      <img src="/logo1000.png" width={30} alt="logo"></img>
-      Web Pangolin Studio
+      <img
+        src="/logo1000.png"
+        width={30}
+        className="w-10 h-10"
+        alt="logo"
+      ></img>
     </Link>
   </>
 );

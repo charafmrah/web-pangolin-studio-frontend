@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/charafmrah/web-pangolin-studio-frontend">
+  <a href="https://github.com/charafmrah/home-health-monitor">
     <img src="public/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -12,14 +12,14 @@
   <p align="center">
     AI tools for creators by creators.
     <br />
-    <a href="https://github.com/charafmrah/web-pangolin-studio-frontend"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/charafmrah/home-health-monitor"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://studio.webpangolin.com">Visit Website</a>
     ·
-    <a href="https://github.com/charafmrah/web-pangolin-studio-frontend/issues">Report Bug</a>
+    <a href="https://github.com/charafmrah/home-health-monitor/issues">Report Bug</a>
     ·
-    <a href="https://github.com/charafmrah/web-pangolin-studio-frontend/issues">Request Feature</a>
+    <a href="https://github.com/charafmrah/home-health-monitor/issues">Request Feature</a>
   </p>
 </div>
 
@@ -120,7 +120,7 @@ Charaf Mrah - [@charafmrah](https://twitter.com/charafmrah) - charaf4charaf@gmai
 
 [product-screenshot]: public/screenshot.jpg
 [license-shield]: https://img.shields.io/github/license/charafmrah/home-health-monitor.svg?style=for-the-badge
-[license-url]: https://github.com/charafmrah/web-pangolin-studio-frontend/LICENSE.txt
+[license-url]: https://github.com/charafmrah/home-health-monitor/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/charafmrah
 [next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white

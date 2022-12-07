@@ -118,11 +118,11 @@ Charaf Mrah - [@charafmrah](https://twitter.com/charafmrah) - charaf4charaf@gmai
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[product-screenshot]: public/screenshot.jpg
-[license-shield]: https://img.shields.io/github/license/charafmrah/.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/charafmrah/web-pangolin-studio-frontend.svg?style=for-the-badge
 [license-url]: https://github.com/charafmrah/web-pangolin-studio-frontend/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/charafmrah
+[product-screenshot]: public/screenshot.jpg
 [next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [next-url]: https://nextjs.org/
 [react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB

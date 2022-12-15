@@ -15,8 +15,6 @@
     <a href="https://github.com/charafmrah/web-pangolin-studio-frontend"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://studio.webpangolin.com">Visit Website</a>
-    ·
     <a href="https://github.com/charafmrah/web-pangolin-studio-frontend/issues">Report Bug</a>
     ·
     <a href="https://github.com/charafmrah/web-pangolin-studio-frontend/issues">Request Feature</a>
@@ -29,13 +27,16 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://studio.webpangolin.com)
 
-More explanations soon...
+Web Pangolin Studio is a single page application that allows users to generate and save AI-generated art. Users can create their own unique art by using the app's intuitive interface and customizable settings. The generated art can be saved to the cloud for future access. This app is perfect for anyone interested in exploring the world of AI-generated art and creating their own unique pieces. Give it a try and let your creativity shine!
 
 ### Built With
 
 - [![React][react.js]][react-url]
 - [![JavaScript][javascript]][javascript-url]
 - [![Tailwind][tailwindcss.com]][tailwind-url]
+- [![Firebase][firebase]][firebase-url]
+
+The backend is built with Django & Python but the code is not available for public use at this time. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,10 +119,6 @@ Charaf Mrah - [@charafmrah](https://twitter.com/charafmrah) - charaf4charaf@gmai
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[license-shield]: https://img.shields.io/github/license/charafmrah/web-pangolin-studio-frontend.svg?style=for-the-badge
-[license-url]: https://github.com/charafmrah/web-pangolin-studio-frontend/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/charafmrah
 [product-screenshot]: public/screenshot.jpg
 [next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [next-url]: https://nextjs.org/
@@ -131,3 +128,5 @@ Charaf Mrah - [@charafmrah](https://twitter.com/charafmrah) - charaf4charaf@gmai
 [tailwind-url]: https://tailwindcss.com
 [javascript]: https://img.shields.io/badge/JavaScript-f7df1e?style=for-the-badge&logo=javascript&logoColor=black
 [javascript-url]: https://javascript.com
+[firebase]: https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black
+[firebase-url]: https://firebase.google.com/

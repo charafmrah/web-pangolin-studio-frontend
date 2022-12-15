@@ -25,8 +25,6 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://studio.webpangolin.com)
-
 Web Pangolin Studio is a single page application that allows users to generate and save AI-generated art. Users can create their own unique art by using the app's intuitive interface and customizable settings. The generated art can be saved to the cloud for future access. This app is perfect for anyone interested in exploring the world of AI-generated art and creating their own unique pieces. Give it a try and let your creativity shine!
 
 ### Built With
